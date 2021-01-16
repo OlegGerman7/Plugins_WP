@@ -120,7 +120,7 @@ function list_of_favorites_posts_dashboard_widget_function() {
 
 function deleteAllFavoritePostAdmin(){
 	if ( ! wp_verify_nonce( $_POST['security'], 'favoriteposts' ) ) :
-		wp_die( 'Error security' );
+		_e( 'Error security', 'textdomain' );
 	endif;
 	$current_user = wp_get_current_user();
 	$current_user_id = $current_user->ID;
