@@ -1,4 +1,12 @@
-<?php class Latest_Posts_With_Thumbnail_Widget extends WP_Widget {
+<?php
+/**
+ * Plugin Name: Latest posts
+ * Description: Display latest posts with thumbnail, excerpt, date
+ * Author:      Oleg German
+ * Version:     1.0
+ */
+
+class Latest_Posts_With_Thumbnail_Widget extends WP_Widget {
 
 function __construct() {
 	parent::__construct(
