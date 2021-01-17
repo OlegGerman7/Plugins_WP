@@ -1,5 +1,4 @@
 <?php
-
 function favorites_posts( $content ){
 	if ( ! is_single() || ! is_user_logged_in() ) return $content;
 	global $post;
